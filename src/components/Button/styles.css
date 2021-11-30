@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;600&family=Spartan:wght@700;900&display=swap');
+
+button:disabled {
+    opacity: 0.2;
+}
+button:disabled:hover {
+    opacity: 0.2;
+    cursor: default;
+}
+.primary {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background:black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid #FF700D;
+}
+.secondary {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #000;
+    background-color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: black 1px solid;
+}
+.secondary:hover, .primary:hover {
+    background: rgb(255,112,13);
+    transition: all 0.5s ease;
+}

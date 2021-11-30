@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400&family=Spartan:wght@700;900&display=swap');
+
+.movies-page{
+    background-color: black;
+    margin-top: 3%;
+}
+
+.movies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movies-title{
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}

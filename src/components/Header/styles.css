@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand&family=Spartan:wght@700;900&display=swap');
+
+body, html {
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:5%;
+    margin-top:5%;
+    background-color: black;
+}
+
+.background{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.headerImage{
+    height:100%;
+    width: 100%;
+
+}
+
+.headingText{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 4rem;
+    color: white;
+
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+    z-index: 3;
+}
+
+.paragraphText{
+
+    position: absolute;
+    bottom: 265px;
+    left: 45px;
+
+    font-size: 1.2rem;
+
+    font-family: 'Quicksand', sans-serif;
+
+    letter-spacing: 2px;
+    z-index: 3;
+
+}
+
+.bookButton{
+    position: absolute;
+    bottom: 170px;
+    left: 45px;
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    background-color: #FF700D;
+    border: none;
+    letter-spacing: 2px;
+    z-index: 3;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.bookButton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+
+
+.overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
