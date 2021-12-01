@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;600;700&family=Spartan:wght@400;700;900&display=swap');
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    background: rgb(0, 0, 0);
+  }
+
+  .navbar li {
+    margin-top: 5px;
+    margin-bottom: 8px;
+  }
+
+  .homeButton, .accountButton{
+    background: none;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+
+  }
+
+  .homeButton:hover, .accountButton:hover{
+    color: rgb(255,112,13);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  .accountButton{
+    margin-left: 15px;
+    margin-right: 20px;
+
+  }
+
+  @media only screen and (min-width: 600px) {
+    .navbar ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: flex-end;
+    }
+  }

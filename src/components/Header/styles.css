@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand&family=Spartan:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;600;700&family=Spartan:wght@400;700;900&display=swap');
 
 body, html {
     margin-left:5%;
     margin-right:5%;
     margin-bottom:5%;
-    margin-top:5%;
+    margin-top:1%;
     background-color: black;
 }
 
@@ -29,15 +29,28 @@ body, html {
     color: white;
 
     position: absolute;
-    bottom: 300px;
+    bottom: 180px;
     left: 40px;
+    z-index: 3;
+}
+
+.cinemaText{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+
+    font-size: 1rem;
+    color: #FF700D;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 380px;
+    left: 45px;
     z-index: 3;
 }
 
 .paragraphText{
 
     position: absolute;
-    bottom: 265px;
+    bottom: 150px;
     left: 45px;
 
     font-size: 1.2rem;
@@ -51,24 +64,25 @@ body, html {
 
 .bookButton{
     position: absolute;
-    bottom: 170px;
+    bottom: 70px;
     left: 45px;
     font-size: 0.8rem;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 900;
-    background-color: #FF700D;
-    border: none;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FF700D;
     letter-spacing: 2px;
     z-index: 3;
     text-transform: uppercase;
     padding: 10px;
     border-radius: 4px;
     color: white;
+    cursor: pointer; 
 
 }
 
 .bookButton:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #FF700D;
     transition: all 0.5s ease;
 }
 
@@ -85,5 +99,34 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+  }
+
+
+  /*----------Responsive Design For Desktop---------*/
+
+@media only screen and (min-width: 1629px) {
+
+    .headingText{
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+
+}
+
+.paragraphText{
+    bottom: 265px;
+    left: 45px;
+}
+
+.bookButton{
+    bottom: 170px;
+    left: 45px;
+}
+
+.cinemaText{
+    bottom: 590px;
+}
+
+
   }
 

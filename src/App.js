@@ -5,15 +5,21 @@ import {
   Route,
 } from "react-router-dom";
 import { MoviesHomePage } from './components/pages/MoviesHomePage';
+import { Navbar } from './components/Navbar';
+import { MovieDetailsPage } from './components/pages/MovieDetailsPage';
 
 
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <MoviesHomePage />
+        </Route>
+        <Route path="/movie/:id">
+          <MovieDetailsPage/>
         </Route>
       </Switch>
     </Router>

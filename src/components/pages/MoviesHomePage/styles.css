@@ -17,3 +17,25 @@
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
 }
+
+.bline{
+    margin-top: 40px;
+}
+
+.loadOverlay {
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    z-index:    10;
+    top:        0; 
+    left:       0; 
+    position:   fixed; 
+  }
+
+ .loadingGIF {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18%;
+} 

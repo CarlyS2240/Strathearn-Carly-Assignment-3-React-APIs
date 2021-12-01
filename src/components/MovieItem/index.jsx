@@ -5,16 +5,22 @@ import { useContext } from 'react';
 import React, { useState } from 'react'
 import { Rating } from 'react-simple-star-rating'
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> /* Used to add breakpoints to website for responsive design */
+
 
 export const MovieItem = (props) => {
-    const {image, id, name, rating, genre, actor, showtimes} = props;
+    const {image, id, name, rating, genre, actor, showtimes, mpaa} = props;
   
     return (
         <div className="movie">
-            <img className="movie-poster" src={image} alt={name + "photo"}/>
+            <Link to={`/movie/${id}`}>
+                <img className="movie-poster" src={image} alt={name + "photo"}/>
+            </Link>
             <p className="movie-name">{name}</p>
             <p className="movie-actor">{actor}</p>
+            <hr className="line" size="1" width="100%" color="#171717"></hr> 
+            <p className="movie-MPAA">{mpaa}</p>
+            <button className="movie-genre" type="button">{genre}</button>
             <div className='App'>
                 <Rating 
                     size={15}
@@ -22,18 +28,9 @@ export const MovieItem = (props) => {
                     transition
                     fillColor='#FF700D'
                     emptyColor='gray'
-                    ratingValue={rating} /* Rating Props */ />
+                    ratingValue={rating}/>
             </div>
-
-            
-
             <Button text="Buy Tickets" type="primary" isDisabled={false} action={() => alert("Requested Movie")}/>
-
-            
-
-            
-
         </div>
-        
     )
 }
