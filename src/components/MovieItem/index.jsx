@@ -30,7 +30,7 @@ export const MovieItem = (props) => {
                     emptyColor='gray'
                     ratingValue={rating}/>
             </div>
-            <Button text="Buy Tickets" type="primary" isDisabled={false} action={() => alert("Requested Movie")}/>
+            <Button text="Get Tickets" type="primary" isDisabled={false} action={() => alert("Requested Tickets")}/>
         </div>
     )
 }
