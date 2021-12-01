@@ -1,16 +1,20 @@
 import './styles.css';
-import {Button} from '../Button';
-import {Link} from 'react-router-dom';
+
+import {Button} from '../Button'; /* Importing the Button component to be displayed within the MovieItem component */
+
+import {Link} from 'react-router-dom'; /* Importing Link to route to the MovieDetailsPage from the homepage*/
 import { useContext } from 'react';
 import React, { useState } from 'react'
-import { Rating } from 'react-simple-star-rating'
+import { Rating } from 'react-simple-star-rating' /* Importing Rating package to display a star rating for the movie on the homepage*/
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> /* Used to add breakpoints to website for responsive design */
 
 
 export const MovieItem = (props) => {
-    const {image, id, name, rating, genre, actor, showtimes, mpaa} = props;
+    const {image, id, name, rating, genre, actor, mpaa} = props; /* Declaring props */
   
+    /* Making the product card component from text, the Button component, and the Rating package*/
+
     return (
         <div className="movie">
             <Link to={`/movie/${id}`}>

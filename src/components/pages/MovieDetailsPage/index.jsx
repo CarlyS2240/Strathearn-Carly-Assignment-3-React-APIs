@@ -1,11 +1,17 @@
-import {useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom'; /* Importing useParams from react-router-dom to return an object from the route rendered*/
 import {useContext, useEffect, useState} from 'react';
+
+/* Importing the ShowtimeButtons component and the Button component to be displayed within the MovieDetailsPage component */
 import {ShowtimeButtons} from '../../ShowtimeButtons';
 import {Button} from '../../Button';
+
+/* Importing a spinner for the loading state*/
 import spinner from '../../../../src/spinner.gif'
 
 
 import "./styles.css"
+
+/* Importing the MoviesOrderContext*/
 import MoviesOrderContext from '../../../context/moviesOrderContext';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> /* Used to add breakpoints to website for responsive design */
@@ -19,9 +25,9 @@ export const MovieDetailsPage = (props) => {
 
     const globalState = useContext(MoviesOrderContext);
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); /* Using in the loading state */
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(true); /* Using to hide an overlay when the API has finished loading */
 
 
 
@@ -33,10 +39,12 @@ export const MovieDetailsPage = (props) => {
         );
         console.log(id);
         setMovie(movie);
-        setShow(false);
+        setShow(false); /* Hiding the loading overlay when the API has finished loading*/
     }, [])
 
     if(movie) {
+
+        /* Making the MovieDetailsPage component from text, the Button component, and the ShowtimeButtons component*/
 
         return (
             <div className="mDetails">
