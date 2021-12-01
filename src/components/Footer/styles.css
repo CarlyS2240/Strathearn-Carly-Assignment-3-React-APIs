@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300;400;600;700&family=Spartan:wght@400;700;900&display=swap');
+
+.listWrapper{
+    display: flex;
+    background: black;
+    align-content: left;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    margin-top: 5%;
+    padding-top: 60px; 
+    border-top: 1px solid #171717;
+}
+
+.firstList{
+    width: 30%;
+    padding-right: 2%;
+    list-style-type: none;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FF700D;
+    text-transform: uppercase;
+    padding-left: 0px;
+}
+
+.secondList, .thirdList, .fourthList{
+    width: 20%
+}
+
+.secondList h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.thirdList h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.fourthList h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.secondList{
+    padding-right: 8%;
+    list-style-type: none;
+    color: white;
+}
+
+.thirdList{
+    padding-right: 8%;
+    list-style-type: none;
+    color: white;
+}
+
+.fourthList{
+    padding-right: 5%;
+    list-style-type: none;
+    color: white;
+}
+
+
+
+.secondList li{
+    padding-bottom: 18px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(138, 138, 138);
+    
+} 
+
+.thirdList li{
+    padding-bottom: 18px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+    
+}
+   
+   
+.fourthList li{
+    padding-bottom: 18px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+    
+}
+
+.homeLink{
+    list-style-type: none;
+}
+
+
+.secondList li:hover{
+    cursor: pointer;
+    color: #FF700D;
+} 
+
+.thirdList li:hover{
+    cursor: pointer;
+    color: #FF700D;
+} 
+
+.fourthList li:hover{
+    cursor: pointer;
+    color: #FF700D;
+} 
+
+/*----------Responsive Design For Desktop---------*/
+
+@media only screen and (min-width: 1629px) {
+
+    .firstList{
+        font-size: 1rem;
+    }
+
+
+
+
+
+  }
+
+
+
+
+
+

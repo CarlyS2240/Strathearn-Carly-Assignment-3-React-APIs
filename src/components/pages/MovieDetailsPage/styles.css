@@ -7,7 +7,7 @@
     letter-spacing: 15px;
     font-size: 3rem;
     color: white;
-
+    border-bottom: 10px solid #FF700D;
     position: absolute;
     bottom: 340px;
     left: 190px;
@@ -23,6 +23,17 @@
     z-index: 3;
     position: absolute;
     margin-top: 20px;
+}
+
+.mTicketTimeText{
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    margin-top: 240px;
 }
 
 .mRuntime{
@@ -58,7 +69,7 @@
     position: absolute;
     margin-top: 70px;
     line-height: 30px;
-    width: 1500px;
+    width: 1000px;
 }
 
 .mImage{
@@ -67,7 +78,7 @@
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: absolute;
     z-index: -1; 
     
 
@@ -91,6 +102,10 @@
     margin-top: 70px;
 }
 
+.continueContainer{
+    margin-top: 50px;
+}
+
 
 
   /*----------Responsive Design For Desktop---------*/
@@ -99,7 +114,7 @@
 
     .mTitle{
         position: absolute;
-        bottom: 435px;
+        bottom: 440px;
         left: 250px;
         font-size: 5rem;
     }

@@ -18,7 +18,7 @@ export const Navbar = () => {
                 <li className="menu">
                 </li>
                 <li>
-                    <button className="homeButton" type="button">Home</button>
+                    <NavLink className="homeButton" exact={true} activeClassName="nav-selected" to="/">Home</NavLink>
                 </li>
                 <li>
                     <button className="accountButton" type="button">My Account</button>

@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { MoviesHomePage } from './components/pages/MoviesHomePage';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import { MovieDetailsPage } from './components/pages/MovieDetailsPage';
 
 
@@ -22,6 +23,7 @@ function App() {
           <MovieDetailsPage/>
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

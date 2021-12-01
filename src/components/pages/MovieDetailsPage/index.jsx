@@ -1,6 +1,9 @@
 import {useParams} from 'react-router-dom';
 import {useContext, useEffect, useState} from 'react';
 import {ShowtimeButtons} from '../../ShowtimeButtons';
+import {Button} from '../../Button';
+import spinner from '../../../../src/spinner.gif'
+
 
 import "./styles.css"
 import MoviesOrderContext from '../../../context/moviesOrderContext';
@@ -16,6 +19,12 @@ export const MovieDetailsPage = (props) => {
 
     const globalState = useContext(MoviesOrderContext);
 
+    const [loading, setLoading] = useState(true);
+
+    const [show, setShow] = useState(true);
+
+
+
     useEffect (() => {
 
         const movie = globalState.movies.find(
@@ -24,6 +33,7 @@ export const MovieDetailsPage = (props) => {
         );
         console.log(id);
         setMovie(movie);
+        setShow(false);
     }, [])
 
     if(movie) {
@@ -42,9 +52,16 @@ export const MovieDetailsPage = (props) => {
                 <hr className="mLine" size="1" width="100%" color="#FF700D"></hr> 
                 <p className="mStoryline">Storyline</p>
                 <p className="mStorylineText">{movie.Storyline?.stringValue}</p>
-                <ShowtimeButtons></ShowtimeButtons>
-           
+                <p className="mTicketTimeText">Choose Your Showtime</p>
+                <ShowtimeButtons time1="10:15 AM" time2="01:45 PM" time3="07:55 PM" time4="9:35 PM"></ShowtimeButtons>
+                <div className="continueContainer">
+                    <Button text="Continue" type="primary" isDisabled={false} action={() => alert("Continue to Checkout")}/>
+                </div>
+                {
+                    loading && <div className="loadOverlay" style={{display: show ? "block" : "none" }}><img className="loadingGIF" src={spinner} alt="loading..." /></div>
+                }
             </div>
+            
         )
 
     } else {
