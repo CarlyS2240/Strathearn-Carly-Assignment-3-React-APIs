@@ -26,7 +26,6 @@
     color: white;
     font-size: 0.9rem;
     text-decoration: none;
-
   }
 
   .homeButton:hover, .accountButton:hover{
@@ -40,11 +39,9 @@
     justify-content: flex-start;
   }
   
-
   .accountButton{
     margin-left: 15px;
     margin-right: 20px;
-
   }
 
   @media only screen and (min-width: 600px) {
@@ -54,4 +51,5 @@
       list-style-type: none;
       justify-content: flex-end;
     }
+    
   }

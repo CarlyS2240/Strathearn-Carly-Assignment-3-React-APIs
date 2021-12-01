@@ -20,16 +20,10 @@ import MoviesOrderContext from '../../../context/moviesOrderContext';
 export const MovieDetailsPage = (props) => {
     
     const {id} = useParams();
-
     const [movie, setMovie] = useState({});
-
     const globalState = useContext(MoviesOrderContext);
-
     const [loading, setLoading] = useState(true); /* Using in the loading state */
-
     const [show, setShow] = useState(true); /* Using to hide an overlay when the API has finished loading */
-
-
 
     useEffect (() => {
 

@@ -63,8 +63,6 @@
     color: white;
 }
 
-
-
 .secondList li{
     padding-bottom: 18px;
     font-size: 1rem;
@@ -79,24 +77,20 @@
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: rgb(158, 158, 158);
-    
+    color: rgb(158, 158, 158); 
 }
-   
-   
+    
 .fourthList li{
     padding-bottom: 18px;
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: rgb(158, 158, 158);
-    
+    color: rgb(158, 158, 158);  
 }
 
 .homeLink{
     list-style-type: none;
 }
-
 
 .secondList li:hover{
     cursor: pointer;
@@ -120,12 +114,7 @@
     .firstList{
         font-size: 1rem;
     }
-
-
-
-
-
-  }
+}
 
 
 

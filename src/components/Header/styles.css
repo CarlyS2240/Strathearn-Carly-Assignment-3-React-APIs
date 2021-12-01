@@ -17,7 +17,6 @@ body, html {
 .headerImage{
     height:100%;
     width: 100%;
-
 }
 
 .headingText{
@@ -27,7 +26,6 @@ body, html {
     letter-spacing: 15px;
     font-size: 4rem;
     color: white;
-
     position: absolute;
     bottom: 180px;
     left: 40px;
@@ -59,7 +57,6 @@ body, html {
 
     letter-spacing: 2px;
     z-index: 3;
-
 }
 
 .bookButton{
@@ -78,7 +75,6 @@ body, html {
     border-radius: 4px;
     color: white;
     cursor: pointer; 
-
 }
 
 .bookButton:hover{
@@ -86,19 +82,17 @@ body, html {
     transition: all 0.5s ease;
 }
 
-
-
 .overlay {
-    position: absolute; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    cursor: pointer; 
   }
 
 
@@ -106,27 +100,25 @@ body, html {
 
 @media only screen and (min-width: 1629px) {
 
-    .headingText{
-    position: absolute;
-    bottom: 300px;
-    left: 40px;
+        .headingText{
+        position: absolute;
+        bottom: 300px;
+        left: 40px;
+    }
+
+    .paragraphText{
+        bottom: 265px;
+        left: 45px;
+    }
+
+    .bookButton{
+        bottom: 170px;
+        left: 45px;
+    }
+
+    .cinemaText{
+        bottom: 590px;
+    }
 
 }
-
-.paragraphText{
-    bottom: 265px;
-    left: 45px;
-}
-
-.bookButton{
-    bottom: 170px;
-    left: 45px;
-}
-
-.cinemaText{
-    bottom: 590px;
-}
-
-
-  }
 
